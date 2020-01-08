@@ -37,6 +37,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playPauseButton" destination="zYx-rK-7JI" id="tig-4S-jv8"/>
+                        <outlet property="progressSlider" destination="Pf1-la-dwL" id="2ZM-wM-Eip"/>
+                        <outlet property="timeLabel" destination="YIv-Di-Vhr" id="n7a-ZL-Svu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

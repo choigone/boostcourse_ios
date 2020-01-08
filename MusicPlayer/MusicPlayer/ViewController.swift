@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK : IBOutlet -> to show on the storyboard
+    @IBOutlet var playPauseButton: UIButton!
+    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var progressSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
