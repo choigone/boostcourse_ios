@@ -25,6 +25,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        self.addViewsWithCode()
         self.initializePlayer()
     }
     
@@ -103,7 +104,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         width = button.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
         
         let ratio: NSLayoutConstraint
-        ratio = button.heightAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1)
+        ratio = button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 1)
         
         centerX.isActive = true
         centerY.isActive = true
@@ -127,7 +128,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         centerX = timeLabel.centerXAnchor.constraint(equalTo: self.playPauseButton.centerXAnchor)
         
         let top: NSLayoutConstraint
-        top = timeLabel.topAnchor.constraint(equalTo: self.playPauseButton.bottomAnchor, constant: 8)
+        top = timeLabel.topAnchor.constraint(equalTo: self.playPauseButton.bottomAnchor, constant: 1)
         
         centerX.isActive = true
         top.isActive = true
@@ -167,7 +168,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         
         self.progressSlider = slider
     }
- 
+    
     //MARK: Action method
     @IBAction func touchUpPlayPauseButton(_ sender: UIButton){
         
